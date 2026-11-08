@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kimetsu | Demon Slayer Showcase</title>
+<link rel="preconnect" href="https://cdnjs.cloudflare.com">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="progress"></div>
+<canvas id="embers"></canvas>
+<div id="loader"><span id="pct">0</span><small>%</small><p>Drawing the blade…</p></div>
+
+<header>
+  <a href="#top" class="logo">KIMETSU <span>HASHIRA ARCHIVES</span></a>
+  <nav><a href="#top">Home</a><a href="#characters">Roster</a><a href="#breathing">Breathing Styles</a><a href="#lore">Lore</a><a href="#gallery">Gallery</a></nav>
+</header>
+
+<section id="top" class="hero">
+  <video id="heroVideo" class="hero-video" muted loop playsinline autoplay preload="auto" aria-hidden="true"></video>
+  <div class="hero-shade"></div>
+  <button id="vidToggle" class="vid-toggle" aria-label="Pause background video">❚❚</button>
+  <div class="hero-text">
+    <p class="eyebrow">Demon Slayer, Kimetsu no Yaiba</p>
+    <h1>Where Night<br>Never Ends</h1>
+    <p class="sub">A showcase of the demons and slayers who fight beneath the moon.</p>
+    <a href="#characters" class="btn">Enter the Night</a>
+  </div>
+</section>
+
+<section id="characters" class="h-wrap">
+  <div class="h-track">
+<div class="h-intro"><h2>Faces of<br>the Night</h2><p>Scroll to explore →</p></div>
+
+<div class="h-cat"><span>Category</span><h3>Slayers &amp; Allies</h3><p>Those who stand against the night.</p></div>
+<article class="card" style="--glow:#2bb3ff"><img loading="lazy" decoding="async" src="images/tanjiro.jpg" width="736" height="1308" style="aspect-ratio:736/1308" alt="Tanjiro Kamado"><div class="info"><svg class="trace" viewBox="0 0 400 500" preserveAspectRatio="none" aria-hidden="true"><path pathLength="1" d="M10 300C70 240 130 360 200 300S330 240 390 300"/><path pathLength="1" d="M10 370C70 310 130 430 200 370S330 310 390 370"/><path pathLength="1" d="M10 230C70 170 130 290 200 230S330 170 390 230"/></svg><span class="tag"><b class="badge">💧</b>Demon Slayer, Water Breathing</span><h3>Tanjiro Kamado</h3><p>A kind-hearted swordsman who fights to cure his sister and end the reign of demons. His Water Breathing flows with unyielding resolve.</p><ul class="stats"><li>Strength<i data-v="80"></i></li><li>Speed<i data-v="78"></i></li><li>Technique<i data-v="85"></i></li><li>Combat Mastery<i data-v="82"></i></li></ul></div></article>
+<article class="card" style="--glow:#ff3d6e"><img loading="lazy" decoding="async" src="images/nezuko.jpg" width="736" height="1308" style="aspect-ratio:736/1308" alt="Nezuko Kamado"><div class="info"><svg class="trace" viewBox="0 0 400 500" preserveAspectRatio="none" aria-hidden="true"><path pathLength="1" d="M20 480C100 380 40 300 130 240S110 120 200 60"/><path pathLength="1" d="M80 490C160 400 120 330 220 280S230 160 320 100"/><path pathLength="1" d="M200 480C240 400 300 380 330 300S390 220 380 140"/></svg><span class="tag"><b class="badge">🩸</b>Ally, Blood Demon Art</span><h3>Nezuko Kamado</h3><p>A demon who still protects humans. She fights with burning blood and fierce kicks, and can grow to terrifying size.</p><ul class="stats"><li>Strength<i data-v="78"></i></li><li>Speed<i data-v="85"></i></li><li>Technique<i data-v="72"></i></li><li>Combat Mastery<i data-v="75"></i></li></ul></div></article>
+<article class="card" style="--glow:#ffc400"><img loading="lazy" decoding="async" src="images/zenitsu.jpg" width="736" height="1308" style="aspect-ratio:736/1308" alt="Zenitsu Agatsuma"><div class="info"><svg class="trace" viewBox="0 0 400 500" preserveAspectRatio="none" aria-hidden="true"><path pathLength="1" d="M260 10L170 190L240 200L140 360L210 370L120 490"/><path pathLength="1" d="M360 60L300 170L350 180L290 290"/><path pathLength="1" d="M60 80L110 170L70 180L110 260"/></svg><span class="tag"><b class="badge">⚡</b>Demon Slayer, Thunder Breathing</span><h3>Zenitsu Agatsuma</h3><p>Timid when awake, devastating when asleep. His Thunderclap and Flash strikes land before enemies can blink.</p><ul class="stats"><li>Strength<i data-v="70"></i></li><li>Speed<i data-v="98"></i></li><li>Technique<i data-v="88"></i></li><li>Combat Mastery<i data-v="80"></i></li></ul></div></article>
+<article class="card" style="--glow:#3b82f6"><img loading="lazy" decoding="async" src="images/inosuke.jpg" width="736" height="1307" style="aspect-ratio:736/1307" alt="Inosuke Hashibira"><div class="info"><svg class="trace" viewBox="0 0 400 500" preserveAspectRatio="none" aria-hidden="true"><path pathLength="1" d="M30 40L370 470"/><path pathLength="1" d="M120 30L390 350"/><path pathLength="1" d="M10 190L250 490"/><path pathLength="1" d="M200 20C260 120 300 120 390 160"/></svg><span class="tag"><b class="badge">🐗</b>Demon Slayer, Beast Breathing</span><h3>Inosuke Hashibira</h3><p>Raised by boars, he fights with two serrated blades and razor-sharp instincts. Wild, fearless and relentless in every battle.</p><ul class="stats"><li>Strength<i data-v="82"></i></li><li>Speed<i data-v="88"></i></li><li>Technique<i data-v="78"></i></li><li>Combat Mastery<i data-v="84"></i></li></ul></div></article>
+<article class="card" style="--glow:#c9a24b"><img loading="lazy" decoding="async" src="images/gyomei.jpg" width="736" height="1305" style="aspect-ratio:736/1305" alt="Gyomei Himejima"><div class="info"><svg class="trace" viewBox="0 0 400 500" preserveAspectRatio="none" aria-hidden="true"><path pathLength="1" d="M20 280A180 180 0 0 1 380 280"/><path pathLength="1" d="M70 280A130 130 0 0 1 330 280"/><path pathLength="1" d="M120 280A80 80 0 0 1 280 280"/><path pathLength="1" d="M20 280A180 180 0 0 0 380 280"/></svg><span class="tag"><b class="badge">🪨</b>Stone Hashira, Stone Breathing</span><h3>Gyomei Himejima</h3><p>The strongest of the Hashira. A prayerful, gentle giant who wields a spiked flail and axe joined by a heavy chain.</p><ul class="stats"><li>Strength<i data-v="100"></i></li><li>Speed<i data-v="75"></i></li><li>Technique<i data-v="90"></i></li><li>Combat Mastery<i data-v="98"></i></li></ul></div></article>
+
+<div class="h-cat"><span>Category</span><h3>The Upper Ranks</h3><p>The strongest of the Twelve Kizuki.</p></div>
+<article class="card" style="--glow:#ff7a2f"><img loading="lazy" decoding="async" src="images/kokushibo.jpg" width="736" height="1104" style="aspect-ratio:736/1104" alt="Kokushibo"><div class="info"><svg class="trace" viewBox="0 0 400 500" preserveAspectRatio="none" aria-hidden="true"><path pathLength="1" d="M300 60A150 150 0 1 0 300 440A110 110 0 1 1 300 60Z"/><path pathLength="1" d="M360 120A100 100 0 1 0 360 380A75 75 0 1 1 360 120Z"/></svg><span class="tag"><b class="badge">🌙</b>Upper Rank One, Moon Breathing</span><h3>Kokushibo</h3><p>The strongest of the Twelve Kizuki. Six eyes see every move, and his blade carves crescent moons through the air.</p><ul class="stats"><li>Strength<i data-v="98"></i></li><li>Speed<i data-v="94"></i></li><li>Technique<i data-v="99"></i></li><li>Combat Mastery<i data-v="99"></i></li></ul></div></article>
+<article class="card" style="--glow:#7fd8ff"><img loading="lazy" decoding="async" src="images/doma.jpg" width="736" height="1308" style="aspect-ratio:736/1308" alt="Doma"><div class="info"><svg class="trace" viewBox="0 0 400 500" preserveAspectRatio="none" aria-hidden="true"><path pathLength="1" d="M200 40V460M40 250H360M85 135L315 365M315 135L85 365"/><circle cx="200" cy="250" r="90" pathLength="1"/></svg><span class="tag"><b class="badge">❄️</b>Upper Rank Two, Cryokinesis</span><h3>Doma</h3><p>A smiling cult leader who freezes the very air with frost fans and ice lotuses, cold to the core.</p><ul class="stats"><li>Strength<i data-v="90"></i></li><li>Speed<i data-v="88"></i></li><li>Technique<i data-v="95"></i></li><li>Combat Mastery<i data-v="92"></i></li></ul></div></article>
+<article class="card" style="--glow:#8a5cff"><img loading="lazy" decoding="async" src="images/akaza.jpg" width="736" height="1308" style="aspect-ratio:736/1308" alt="Akaza"><div class="info"><svg class="trace" viewBox="0 0 400 500" preserveAspectRatio="none" aria-hidden="true"><circle cx="200" cy="250" r="60" pathLength="1"/><circle cx="200" cy="250" r="115" pathLength="1"/><circle cx="200" cy="250" r="170" pathLength="1"/><path pathLength="1" d="M200 60V440M10 250H390"/></svg><span class="tag"><b class="badge">💥</b>Upper Rank Three, Destructive Death</span><h3>Akaza</h3><p>A fierce martial artist who worships strength above all. His Destructive Death technique reads and crushes opponents with terrifying precision.</p><ul class="stats"><li>Strength<i data-v="95"></i></li><li>Speed<i data-v="90"></i></li><li>Technique<i data-v="98"></i></li><li>Combat Mastery<i data-v="97"></i></li></ul></div></article>
+<article class="card" style="--glow:#e8368f"><img loading="lazy" decoding="async" src="images/daki-gyutaro.jpg" width="736" height="1307" style="aspect-ratio:736/1307" alt="Daki &amp; Gyutaro"><div class="info"><svg class="trace" viewBox="0 0 400 500" preserveAspectRatio="none" aria-hidden="true"><path pathLength="1" d="M10 120C120 60 150 200 250 150S370 80 390 200"/><path pathLength="1" d="M10 260C120 200 150 340 250 290S370 220 390 340"/><path pathLength="1" d="M10 400C120 340 150 480 250 430S370 360 390 480"/></svg><span class="tag"><b class="badge">🎀</b>Upper Rank Six, Demon Siblings</span><h3>Daki &amp; Gyutaro</h3><p>A sister and brother bound together. They strike with living obi sashes and poisoned blood sickles.</p><ul class="stats"><li>Strength<i data-v="85"></i></li><li>Speed<i data-v="90"></i></li><li>Technique<i data-v="82"></i></li><li>Combat Mastery<i data-v="84"></i></li></ul></div></article>
+
+<div class="h-cat"><span>Category</span><h3>The Demon King</h3><p>Where every demon began.</p></div>
+<article class="card" style="--glow:#e01b2f"><img loading="lazy" decoding="async" src="images/muzan.jpg" width="736" height="1308" style="aspect-ratio:736/1308" alt="Muzan Kibutsuji"><div class="info"><svg class="trace" viewBox="0 0 400 500" preserveAspectRatio="none" aria-hidden="true"><path pathLength="1" d="M20 480C120 360 30 260 200 210S380 120 380 20"/><path pathLength="1" d="M60 490C160 400 90 300 240 260S390 200 380 100"/><path pathLength="1" d="M10 380C90 330 70 250 150 200"/></svg><span class="tag"><b class="badge">👁</b>Origin of all demons</span><h3>Muzan Kibutsuji</h3><p>The first demon and source of all others. Ruthless, calculating and nearly immortal, he rules from the shadows with absolute fear.</p><ul class="stats"><li>Strength<i data-v="99"></i></li><li>Speed<i data-v="96"></i></li><li>Technique<i data-v="93"></i></li><li>Combat Mastery<i data-v="95"></i></li></ul></div></article>
+</div>
+</section>
+
+<section id="breathing" class="feature">
+  <h2>Breathing Styles</h2>
+  <p>Nine elite swordsmen, Stone, Wind, Water, Flame, Insect, Love, Serpent, Mist and Sound, stand as the Demon Slayer Corps' strongest pillars.</p>
+  <div class="chips"><span>Water</span><span>Thunder</span><span>Flame</span><span>Wind</span><span>Stone</span><span>Mist</span><span>Insect</span><span>Love</span><span>Serpent</span><span>Sound</span><span>Moon</span><span>Beast</span></div>
+  <img class="reveal" src="images/hashira.jpg" width="736" height="1308" style="aspect-ratio:736/1308" alt="The nine Hashira">
+</section>
+
+<section id="lore" class="feature">
+  <h2>Lore</h2>
+  <p>For a thousand years the Demon Slayer Corps has fought in secret to protect humanity from demons born of Muzan Kibutsuji’s blood. Nine Hashira lead the Corps, while the Twelve Kizuki, the Upper and Lower Moons, serve the Demon King.</p>
+</section>
+
+<section id="gallery" class="feature about">
+  <h2>Gallery</h2>
+  <div class="duo">
+    <img class="reveal" src="images/akaza-butterfly.jpg" width="736" height="1472" style="aspect-ratio:736/1472" alt="Akaza and a butterfly">
+    <img class="reveal" src="images/muzan-walk.jpg" width="736" height="1307" style="aspect-ratio:736/1307" alt="Muzan walking through shadow">
+  </div>
+  <p>Fan-art showcase inspired by Demon Slayer: Kimetsu no Yaiba. All characters belong to their original creators.</p>
+</section>
+
+<div id="pill"><span id="pillName"></span><span id="pillCount">01 / 10</span><div class="pbar"><i id="pillFill"></i></div></div>
+
+<button id="toTop" aria-label="Back to top">↑</button>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
